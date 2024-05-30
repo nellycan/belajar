@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Operator In</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+</head> 
+<body>
+	<script>
+
+		const person = {
+			firstName: "Nellycan",
+			lastName: "Manurung"
+		};
+
+		if ("firstName" in person) { // true
+			document.writeln(`<p>Hello ${person.firstName}</p>`)
+		} else {
+			document.writeln(`<p>Ga ada tuh</p>`)
+		}
+
+		const student = {
+			firstName: "Nellycan",
+			middleName: undefined,
+			lastName: "Manurung"
+		}
+
+		if ("middleName" in student) { // true
+			document.writeln(`<p>Hello ${student.middleName}</p>`)
+		} else {
+			document.writeln(`<p>Ga ada tuh</p>`)
+		}
+
+		const employee = {
+			firstName: "Nellycan",
+			middleName: "Debora",
+			lastName: "Manurung"
+		}
+
+		delete employee.middleName;
+
+		if ("middleName" in employee) { // false
+			document.writeln(`<p>Hello ${employee.middleName}</p>`)
+		} else {
+			document.writeln(`<p>Ga ada tuh</p>`)
+		}
+
+		const names = ["Nellycan", "Debora", "Manurung"];
+		delete names[1];
+
+		if (1 in names) { // false
+			document.writeln(`<p>Hello ${names[1]}</p>`)
+		} else {
+			// note: dipanggil pake in operator false, tapi length array tetap 3
+			document.writeln(`<p>Ga ada tuh, length array: ${names.length}</p>`)
+		}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Operator Typeof</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+</head> 
+<body>
+	<script>
+
+		/* note:
+			- undefined | string | number | boolean | bigint | function | symbol | object
+			- `null` & `array` masuk tipe data `object`
+		*/
+		let data = null;
+
+		const typeData = typeof data; // note: hasil selalu string
+		document.writeln(`<p>${typeData}</p>`);
+
+    </script>
+</body>
+</html>

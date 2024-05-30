@@ -37,7 +37,11 @@
 		console.table(orang);
 		console.table(orang["anak ke"]); // 1
 
-		delete orang["jumlah saudara"]; // ask: index juga terhapus? tidak terhapus; valuenya jadi undefined
+		/* ask: index juga terhapus? 
+			- tidak terhapus; valuenya jadi undefined ??
+			- see operator in
+		*/
+		delete orang["jumlah saudara"];
 
 		console.table(orang);
 		console.info(orang["jumlah saudara"]); // undefined
