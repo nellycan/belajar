@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Variable Const</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+</head> 
+<body>
+	<script>
+
+		const fullName = "Nellycan Debora Manurung";
+
+		document.writeln(fullName);
+		document.writeln("</br>");
+
+		/* note:
+			ERROR!
+			Uncaught TypeError: Assignment to constant variable.
+			nilai dari variable const tidak dapat diubah (immutable)
+		*/
+		fullName = "Nellycan Manurung"; // note: code berhenti sampai di line ini
+
+		document.writeln(fullName);
+		document.writeln("</br>");
+
+    </script>
+</body>
+</html>

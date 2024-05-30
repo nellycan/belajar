@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Operator Perbandingan</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+</head> 
+<body>
+	<script>
+
+		/* note: 
+			- membandingkan 2 value sehingga  menghasilkan boolean true | false
+			- === | !== membandingkan nilai dan tipe; keduanya harus terpenuhi
+		*/
+        let result = 5 > "5"; // false
+		document.writeln("<p>" + result + "</p>");
+
+		result = 5 < "5"; // false
+		document.writeln("<p>" + result + "</p>");
+
+		result = 5 >= "5"; // true
+		document.writeln("<p>" + result + "</p>");
+
+		result = 5 <= "5"; // true
+		document.writeln("<p>" + result + "</p>");
+
+		result = 5 == "5"; // true
+		document.writeln("<p>" + result + "</p>");
+
+		result = 5 === "5"; // false
+		document.writeln("<p>" + result + "</p>");
+
+		result = 5 != "8"; // true
+		document.writeln("<p>" + result + "</p>");
+
+		result = 5 !== "8"; // true
+		document.writeln("<p>" + result + "</p>");
+
+    </script>
+</body>
+</html>

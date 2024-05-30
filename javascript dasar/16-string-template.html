@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>String Template</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+</head> 
+<body>
+	<script>
+
+		// note: untuk me-substitusi nilai variable
+		const firstName = "Nellycan";
+		const middleName = "Debora";
+		const lastName = "Manurung";
+
+		const template = `Name: ${firstName} ${middleName} ${lastName}`;
+
+		console.info(template);
+
+
+		// note: bisa juga substitusi sebuah ekspresi
+		const name = "Nellycan Debora Manurung";
+		const nilai = 90;
+
+		const template2 = `Name: ${name}, Lulus: ${nilai > 70}`;
+
+		console.info(template2);
+
+
+		// note: bisa multiline juga
+		const multiline = `Nama saya nelly,
+kerjanya tidur doank,
+paling sama makan`; // note: supaya gak kena tab hasilnya
+
+		document.writeln("<pre>");
+		document.writeln(multiline);
+		document.writeln("<pre>");
+
+    </script>
+</body>
+</html>
