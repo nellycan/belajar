@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Konversi Number dan String</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+</head> 
+<body>
+	<script>
+
+        const value = "1.9";
+
+		document.writeln(`<p>${parseInt(value)}</p>`); // konversi string ke bilangan bulat; 1
+		document.writeln(`<p>${parseFloat(value)}</p>`); // konversi string ke pecahan; 1.9
+		document.writeln(`<p>${Number(value)}</p>`); // konversi string ke bilangan bulat ataupun pecahan; 1.9
+
+		const value1 = 1;
+		const value2 = 2;
+		
+		const total = value1.toString() + value2; // konversi number ke string; 12
+
+		document.writeln(`<p>${total}</p>`)
+
+
+		// note: NaN (Not a Number) ditemukan saat konversi string ke number
+
+		document.writeln(`<p>${parseInt("ada1salah")}</p>`); // NaN
+		document.writeln(`<p>${parseInt("1ada")}</p>`); // ditolerir; 1
+
+		document.writeln(`<p>${parseFloat("ada1.2salah")}</p>`); // NaN
+		document.writeln(`<p>${parseFloat("1.2ada")}</p>`); // ditolerir; 1.2
+
+		document.writeln(`<p>${Number("ada1.2salah")}</p>`); // NaN
+		document.writeln(`<p>${Number("1.2salah")}</p>`); // NaN
+		document.writeln(`<p>${Number("salah")}</p>`); // NaN
+
+		document.writeln(`<p>${isNaN("ada1.2salah")}</p>`); // true
+		document.writeln(`<p>${isNaN(100)}</p>`); // false
+
+    </script>
+</body>
+</html>

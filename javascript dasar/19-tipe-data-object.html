@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tipe Data Object</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+</head> 
+<body>
+	<script>
+
+		let orang = {};
+
+		orang["nama"] = "Nellycan Debora Manurung";
+		orang["alamat"] = "Indonesia";
+		orang["umur"] = 37;
+
+		console.table(orang);
+		console.table(orang.nama);
+		console.table(orang.alamat);
+
+		// note: rekomendasi untuk menambahkan value ke object
+		orang = {
+			pekerjaan: "Programmer",
+			dob: "25 April 1987"
+		}
+
+		console.table(orang);
+
+		// note: kapan perlu kita membuat index dengan "" | ''
+		orang = {
+			"anak ke": 1,
+			"jumlah saudara": 2,
+			ayah: "Bapak Manurung",
+			ibu: "Ibu Sitorus"
+		}
+
+		console.table(orang);
+		console.table(orang["anak ke"]); // 1
+
+		delete orang["jumlah saudara"]; // ask: index juga terhapus? tidak terhapus; valuenya jadi undefined
+
+		console.table(orang);
+		console.info(orang["jumlah saudara"]); // undefined
+		
+
+    </script>
+</body>
+</html>

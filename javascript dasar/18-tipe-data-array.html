@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tipe Data Array</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+</head> 
+<body>
+	<script>
+
+		let arrayKosong = [];
+
+		let arrayNama = ["Nellycan", "Debora", "Manurung"];
+
+		let multiValueArray = ["Random", 1, false]; // note: array bisa dimasukkan dengan berbagai tipe data
+
+		// note: menambahkan data ke array
+		let names = [];
+		names.push("Nellycan"); // index ke 0
+		names.push("Debora", "Manurung"); // index ke 1, index ke 2
+
+		console.table(names); // note: untuk melihat bentuk table, page harus di-refresh
+		console.info(names.length) // 3
+		console.info(names[2]) // Debora
+
+		// note: mengubah value array pada index tertentu
+		names[2] = "Programmer";
+
+		console.table(names);
+
+		// note: menghapus value array pada index tertentu; index masih ada meski tak terlihat
+		delete names[2];
+
+		console.table(names);
+		console.table(names.length); // 3
+		console.info(names[2]); // undefined
+
+		// note; array bisa dimasukkan dengan berbagai tipe
+		names.push(1, 2, true);
+
+		console.table(names);
+
+		// note: array bisa dimasukkan dengan array
+		names[3] = ["Nellycan", "Programmer", "Unfaedah"];
+
+		console.table(names);
+
+		names.push([1, 2, ["Semangat", "Terus"]]); // note: table view tidak menampilkan semua value array lapisan ke-3
+
+		console.table(names);
+
+    </script>
+</body>
+</html>

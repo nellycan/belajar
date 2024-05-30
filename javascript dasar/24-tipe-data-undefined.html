@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tipe Data Undefined</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+</head> 
+<body>
+	<script>
+		
+		// note: tipe data ketika value dari variablenya belum didefinisikan (belum diisi dengan value)
+        let name; // note: membuat variable tanpa value tidak bisa menggunakan const
+
+		if (name === undefined) {
+			console.info("UNDEFINED");
+		} else {
+			console.info("DEFINED");
+		}
+
+		const names = ["Nellycan", "Debora"];
+
+		if (names[2] === undefined) {
+			console.info("ARRAY UNDEFINED");
+		} else {
+			console.info("ARRAY DEFINED");
+		}
+
+		const person = {};
+
+		if (person.name === undefined) {
+			console.info("OBJECT UNDEFINED");
+		} else {
+			console.info("OBJECT DEFINED");
+		}
+
+
+    </script>
+</body>
+</html>

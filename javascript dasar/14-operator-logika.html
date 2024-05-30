@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Operator Logika</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+</head> 
+<body>
+	<script>
+
+		// note: membandingkan 2 statement/boolean dan  menghasilkan boolean true | false
+        const nilaiUjian = 80;
+		const nilaiAbsensi = 70;
+
+		const lulusUjian = nilaiUjian > 75; // true
+		document.writeln("<p>" + lulusUjian + "</p>");
+
+		const lulusAbsensi = nilaiAbsensi > 75; // false
+		document.writeln("<p>" + lulusAbsensi + "</p>");
+
+		const lulus = lulusUjian && lulusAbsensi; // false
+		document.writeln("<p>" + lulus + "</p>");
+
+		const duniaParalel = !lulus; // true
+		document.writeln("<p>" + duniaParalel + "</p>");
+		
+    </script>
+</body>
+</html>
