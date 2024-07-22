@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Optional Chaining</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+</head> 
+<body>
+	<script>
+
+		// note: untuk mengakses data object yang nullish value
+
+		let person = {};
+
+		// document.writeln(`<p>Negara: ", ${person.address.country}</p>`); // error
+
+		document.writeln(`<p>Negara: ", ${person?.address?.country}</p>`); // tidak error, nilai `undefined`
+		document.writeln(`<p>Negara: ", ${person?.address?.country ?? 'Default Indonesia'}</p>`); // tidak error, nilai `undefined`
+    </script>
+</body>
+</html>
